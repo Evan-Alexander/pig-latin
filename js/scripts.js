@@ -1,12 +1,26 @@
-// The below works, but is lengthy ...
+var vowel = ["a","e","i","o","u"];
+for (var index = 0; index < vowel.length; index += 1);
 
-// var word = prompt("Enter a word");
-// var firstvowel = word.charAt(0);
-//
-// var latin = function(word) {
-// 	if (firstvowel === "a" || firstvowel === "e" || firstvowel === "i" || firstvowel === "o" || firstvowel === "u") {
-//   alert(word + "ay");
-// 	}
-// };
-//
-// latin(word);
+var latin = function(word) {
+  var firstletter = word.charAt(0);
+  var restofword = word.substring(1, word.length);
+	if (firstletter === vowel[0] || firstletter === vowel[1] || firstletter === vowel[2] || firstletter === vowel[3] || firstletter === vowel[4]) {
+  return word + "ay";
+	} else {
+  return restofword + firstletter + "ay";
+  }
+};
+
+
+$(document).ready(function() {
+  $("form#pig-latin").submit(function(event) {
+    event.preventDefault();
+    var word = $("input#word").val();
+    var result = latin(word);
+    $(".word").text(word);
+    $(".latin").text(result);
+
+    $("#result").show();
+
+  });
+});
