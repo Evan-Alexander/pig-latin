@@ -1,12 +1,12 @@
-#_Leap Year Detector
+#_Pig Latin Translator_
 
-#### _Webpage that tells the user if a year is a leap year, 18 January 2017_
+#### _Webpage that translates any word into Pig Latin, 18 January 2017_
 
 #### By _Erica Wright & Jason Brown
 
 ## Description
 
-_This is a webpage that asks the user to input a year and uses JavaScript to determine whether the given year is a leap year or not. It then informs the user of the result._
+_This is a webpage that takes any word and translates it into Pig Latin._
 
 ## Setup/Installation Requirements
 
