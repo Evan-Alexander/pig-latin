@@ -10,7 +10,7 @@ _This is a webpage that takes any word and translates it into Pig Latin._
 
 ## Setup/Installation Requirements
 
-* _Clone github repository for leap-year webpage_
+* _Clone github repository for pig-latin webpage_
 * _Open index.html in web browser window_
 
 ## Known Bugs
