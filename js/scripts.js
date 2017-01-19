@@ -10,6 +10,8 @@ var latin = function(word) {
   return word + "ay";
   } else if ((firstletter != vowel[0] || firstletter != vowel[1] || firstletter != vowel[2] || firstletter != vowel[3] || firstletter != vowel[4]) && !(secondletter == vowel[0] || secondletter == vowel[1] || secondletter == vowel[2] || secondletter == vowel[3] || secondletter == vowel[4])) {
   return restofword2 + firstletter + secondletter + "ay";
+  } else if ((firstletter === "q") && (secondletter === "u")) {
+  return restofword2 + firstletter + secondletter + "ay";
   } else {
   return restofword1 + firstletter + "ay";
   }
